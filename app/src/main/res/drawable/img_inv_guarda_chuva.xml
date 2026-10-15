@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Guarda-chuva com ventilador (ilustração original) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path android:fillColor="#DCEBFF" android:pathData="M48,2 A46,46 0 1 1 47.99,2 Z" />
+    <path android:pathData="M48,14 L48,22" android:fillColor="#00000000" android:strokeColor="#2D2440" android:strokeWidth="2.5" android:strokeLineCap="round" />
+    <path android:pathData="M40,14 L56,14" android:fillColor="#00000000" android:strokeColor="#5B3FA8" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M36,11 L44,17 M52,17 L60,11" android:fillColor="#00000000" android:strokeColor="#5B3FA8" android:strokeWidth="2.5" android:strokeLineCap="round" />
+    <path android:pathData="M16,50 C16,32 30,22 48,22 C66,22 80,32 80,50 C75,46 69,46 64,50 C59,46 53,46 48,50 C43,46 37,46 32,50 C27,46 21,46 16,50 Z" android:fillColor="#F2762E" />
+    <path android:pathData="M48,22 C42,30 40,40 40,48 M48,22 C54,30 56,40 56,48" android:fillColor="#00000000" android:strokeColor="#C4561A" android:strokeWidth="1.5" />
+    <path android:pathData="M48,50 L48,74 C48,80 40,80 40,74" android:fillColor="#00000000" android:strokeColor="#2D2440" android:strokeWidth="3" android:strokeLineCap="round" />
+    <path android:pathData="M24,60 L22,66 M70,58 L68,64 M60,66 L58,72" android:fillColor="#00000000" android:strokeColor="#4A90E2" android:strokeWidth="2.5" android:strokeLineCap="round" />
+</vector>

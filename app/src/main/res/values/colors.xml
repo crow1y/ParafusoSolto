@@ -1,0 +1,17 @@
+<resources>
+    <!-- Paleta "oficina de inventor" -->
+    <color name="fundo">#FFF7EC</color>
+    <color name="cartao">#FFFFFF</color>
+    <color name="borda">#F0DCC2</color>
+    <color name="laranja">#F2762E</color>
+    <color name="laranja_escuro">#C4561A</color>
+    <color name="roxo">#5B3FA8</color>
+    <color name="texto">#2D2440</color>
+    <color name="texto_suave">#7A7190</color>
+    <color name="branco">#FFFFFF</color>
+
+    <!-- Selos -->
+    <color name="selo_aprovada">#2E9E5B</color>
+    <color name="selo_ajustes">#E0A21B</color>
+    <color name="selo_reprovada">#D64545</color>
+</resources>

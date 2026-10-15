@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ícone: engrenagem com parafuso solto -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#F2762E" android:pathData="M38,56 a16,16 0 1 1 32,0 a16,16 0 1 1 -32,0 Z" />
+    <path android:fillColor="#5B3FA8" android:pathData="M48,56 a6,6 0 1 1 12,0 a6,6 0 1 1 -12,0 Z" />
+    <path android:fillColor="#00000000" android:strokeColor="#F2762E" android:strokeWidth="5" android:strokeLineCap="round"
+        android:pathData="M54,34 L54,38 M54,74 L54,78 M32,56 L36,56 M72,56 L76,56 M38.4,40.4 L41.3,43.3 M66.7,68.7 L69.6,71.6 M69.6,40.4 L66.7,43.3 M41.3,68.7 L38.4,71.6" />
+    <path android:fillColor="#00000000" android:strokeColor="#FFFFFF" android:strokeWidth="4" android:strokeLineCap="round"
+        android:pathData="M72,30 L80,38" />
+</vector>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 2: Ficha da Invenção -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true"
+    tools:context=".FichaActivity">
+
+    <!-- Este bloco recebe a animação de entrada (res/anim) -->
+    <LinearLayout
+        android:id="@+id/layoutConteudoFicha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textRotuloFicha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="@string/rotulo_ficha"
+            android:textColor="@color/laranja_escuro"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageFicha"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/cd_imagem_invencao"
+            tools:src="@drawable/img_inv_robo" />
+
+        <TextView
+            android:id="@+id/textNomeFicha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textColor="@color/roxo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Robô Dobra-Meias" />
+
+        <TextView
+            android:id="@+id/textInventorFicha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/texto"
+            android:textSize="15sp"
+            tools:text="Inventor: Lulu Engrenagem" />
+
+        <TextView
+            android:id="@+id/textCategoriaFicha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/laranja_escuro"
+            android:textSize="14sp"
+            tools:text="Categoria: Robótica Caseira" />
+
+        <TextView
+            android:id="@+id/textRotuloDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/rotulo_descricao"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescricaoFicha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_cartao"
+            android:lineSpacingExtra="3dp"
+            android:padding="14dp"
+            android:textColor="@color/texto"
+            android:textSize="15sp"
+            tools:text="Robô doméstico que encontra pares de meias perdidas..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonVoltarFeira"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="@string/botao_voltar_feira" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTestarPrototipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="@string/botao_testar"
+                app:backgroundTint="@color/laranja" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

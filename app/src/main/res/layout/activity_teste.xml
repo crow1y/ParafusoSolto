@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 3: Câmara de Testes -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true"
+    tools:context=".TesteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textTituloCamara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_camara"
+            android:textColor="@color/roxo"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Invenção recebida -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_cartao"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/imageTeste"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/cd_imagem_invencao"
+                tools:src="@drawable/img_inv_patins" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textNomeTeste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/texto"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:text="Patins a Vapor" />
+
+                <TextView
+                    android:id="@+id/textCategoriaTeste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/laranja_escuro"
+                    android:textSize="13sp"
+                    tools:text="Transporte Duvidoso" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textRotuloResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/rotulo_resultado"
+            android:textColor="@color/texto"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/radioAprovada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="44dp"
+                android:text="@string/resultado_aprovada" />
+
+            <RadioButton
+                android:id="@+id/radioAjustes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="44dp"
+                android:text="@string/resultado_ajustes" />
+
+            <RadioButton
+                android:id="@+id/radioReprovada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="44dp"
+                android:text="@string/resultado_reprovada" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editObservacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="top|start"
+            android:hint="@string/hint_observacao"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonConfirmarTeste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/botao_confirmar" />
+
+        <!-- Selo animado com ViewPropertyAnimator -->
+        <ImageView
+            android:id="@+id/imageSelo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+            android:contentDescription="@string/cd_selo"
+            android:visibility="invisible"
+            tools:src="@drawable/selo_aprovada"
+            tools:visibility="visible"
+            tools:alpha="1" />
+
+        <TextView
+            android:id="@+id/textSelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="Resultado: Aprovada" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonReverFicha"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:text="@string/botao_rever_ficha" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEncerrarAvaliacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:text="@string/botao_encerrar"
+                app:backgroundTint="@color/laranja" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

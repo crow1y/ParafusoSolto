@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tela 1: Feira de Invenções -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    tools:context=".MainActivity">
+
+    <!-- ===== Cabeçalho ===== -->
+    <View
+        android:id="@+id/viewCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_cabecalho"
+        app:layout_constraintBottom_toBottomOf="@id/spaceCabecalho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/cd_logo"
+        android:src="@drawable/img_logo_feira"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTituloFeira"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/titulo_feira"
+        android:textColor="@color/branco"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageLogo"
+        app:layout_constraintTop_toTopOf="@id/imageLogo" />
+
+    <TextView
+        android:id="@+id/textSubtituloFeira"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_feira"
+        android:textColor="#DDD3FF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/textTituloFeira"
+        app:layout_constraintStart_toStartOf="@id/textTituloFeira"
+        app:layout_constraintTop_toBottomOf="@id/textTituloFeira" />
+
+    <!-- Atualizado no onResume() -->
+    <TextView
+        android:id="@+id/textQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/branco"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        tools:text="Protótipos na feira: 5" />
+
+    <!-- Preenchido no onNewIntent() -->
+    <TextView
+        android:id="@+id/textUltimoTeste"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFD9BF"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textQuantidade"
+        tools:text="Último teste: Patins a Vapor – Aprovada"
+        tools:visibility="visible" />
+
+    <!-- Define onde termina o fundo do cabeçalho -->
+    <Space
+        android:id="@+id/spaceCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textUltimoTeste" />
+
+    <!-- ===== Formulário ===== -->
+    <EditText
+        android:id="@+id/editNomeInvencao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_nome_invencao"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceCabecalho" />
+
+    <EditText
+        android:id="@+id/editNomeInventor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="6dp"
+        android:hint="@string/hint_nome_inventor"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@id/spinnerCategoria"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNomeInvencao" />
+
+    <!-- Categoria (menu suspenso) -->
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/editNomeInventor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/editNomeInventor"
+        app:layout_constraintTop_toTopOf="@id/editNomeInventor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/botao_cadastrar"
+        app:backgroundTint="@color/laranja"
+        app:layout_constraintEnd_toStartOf="@id/buttonAlternarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNomeInventor" />
+
+    <!-- Alterna entre lista e grade -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAlternarLayout"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/botao_ver_grade"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonCadastrar" />
+
+    <TextView
+        android:id="@+id/textDicaLista"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/dica_lista"
+        android:textColor="@color/texto_suave"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCadastrar" />
+
+    <!-- ===== Lista de invenções (ocupa o resto da tela) ===== -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerInvencoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDicaLista"
+        tools:listitem="@layout/item_invencao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

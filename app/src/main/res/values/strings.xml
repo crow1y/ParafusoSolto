@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Feira Parafuso Solto</string>
+
+    <!-- ===== Tela 1: Feira ===== -->
+    <string name="cd_logo">Logo da feira: uma engrenagem com um parafuso solto</string>
+    <string name="titulo_feira">Feira Parafuso Solto</string>
+    <string name="subtitulo_feira">Exposição anual de invenções malucas</string>
+    <string name="formato_quantidade">Protótipos na feira: %1$d</string>
+    <string name="formato_ultimo_teste">Último teste: %1$s – %2$s</string>
+    <string name="hint_nome_invencao">Nome da invenção</string>
+    <string name="hint_nome_inventor">Nome do inventor</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="botao_ver_grade">Ver em grade</string>
+    <string name="botao_ver_lista">Ver em lista</string>
+    <string name="dica_lista">Toque para abrir a ficha · segure para remover</string>
+
+    <!-- Erros -->
+    <string name="erro_nome_invencao">O nome da invenção precisa ter pelo menos 3 caracteres</string>
+    <string name="erro_nome_inventor">O nome do inventor precisa ter pelo menos 3 caracteres</string>
+    <string name="erro_categoria">Selecione uma categoria</string>
+
+    <!-- Mensagens -->
+    <string name="msg_cadastrada">%1$s entrou na feira!</string>
+    <string name="msg_removida">%1$s foi retirada da feira</string>
+    <string name="titulo_remover">Remover invenção?</string>
+    <string name="mensagem_remover">Deseja mesmo retirar \"%1$s\" da feira?</string>
+    <string name="botao_remover">Remover</string>
+    <string name="botao_cancelar">Cancelar</string>
+    <string name="descricao_padrao">Protótipo cadastrado por %1$s durante a feira. Ainda não possui manual, garantia nem explicação científica.</string>
+
+    <!-- Categorias (posição 0 é o aviso) -->
+    <string-array name="categorias">
+        <item>Selecione a categoria</item>
+        <item>Cozinha Absurda</item>
+        <item>Transporte Duvidoso</item>
+        <item>Robótica Caseira</item>
+        <item>Clima de Bolso</item>
+        <item>Tecnologia Inútil</item>
+    </string-array>
+
+    <!-- Invenções iniciais -->
+    <string name="inv1_nome">Guarda-chuva Ventilador</string>
+    <string name="inv1_inventor">Dona Zuleica Ventania</string>
+    <string name="inv1_categoria">Clima de Bolso</string>
+    <string name="inv1_descricao">Protege da chuva e, ao mesmo tempo, refresca o usuário com uma hélice de três velocidades. Na velocidade máxima, o inventor costuma decolar alguns centímetros.</string>
+
+    <string name="inv2_nome">Torradeira Teleguiada</string>
+    <string name="inv2_inventor">Prof. Bolota Farinha</string>
+    <string name="inv2_categoria">Cozinha Absurda</string>
+    <string name="inv2_descricao">Torradeira com antena e controle remoto que leva o pão quentinho até a mesa. Ainda erra o caminho e, às vezes, entrega a torrada para o cachorro.</string>
+
+    <string name="inv3_nome">Patins a Vapor</string>
+    <string name="inv3_inventor">Tio Gaspar Caldeira</string>
+    <string name="inv3_categoria">Transporte Duvidoso</string>
+    <string name="inv3_descricao">Patins com uma pequena caldeira no calcanhar. Alcançam 40 km/h em linha reta, mas só funcionam enquanto houver água fervendo e coragem.</string>
+
+    <string name="inv4_nome">Robô Dobra-Meias</string>
+    <string name="inv4_inventor">Lulu Engrenagem</string>
+    <string name="inv4_categoria">Robótica Caseira</string>
+    <string name="inv4_descricao">Robô doméstico que encontra pares de meias perdidas e dobra cada uma com perfeição. Efeito colateral: também dobra camisetas, toalhas e, eventualmente, o gato.</string>
+
+    <string name="inv5_nome">Óculos Anti-Segunda</string>
+    <string name="inv5_inventor">Jorginho Fusível</string>
+    <string name="inv5_categoria">Tecnologia Inútil</string>
+    <string name="inv5_descricao">Óculos com lentes que transformam qualquer segunda-feira em sexta-feira visualmente. Não altera o calendário, os boletos nem o humor do chefe.</string>
+
+    <!-- ===== Tela 2: Ficha ===== -->
+    <string name="cd_imagem_invencao">Ilustração da invenção</string>
+    <string name="rotulo_ficha">FICHA TÉCNICA</string>
+    <string name="formato_inventor">Inventor: %1$s</string>
+    <string name="formato_categoria">Categoria: %1$s</string>
+    <string name="rotulo_descricao">Descrição do protótipo</string>
+    <string name="botao_voltar_feira">Voltar à feira</string>
+    <string name="botao_testar">Testar protótipo</string>
+    <string name="erro_dados_invalidos">Dados da invenção inválidos. Voltando à feira.</string>
+
+    <!-- ===== Tela 3: Câmara de Testes ===== -->
+    <string name="titulo_camara">Câmara de Testes</string>
+    <string name="rotulo_resultado">Resultado do teste</string>
+    <string name="resultado_aprovada">Aprovada</string>
+    <string name="resultado_ajustes">Precisa de ajustes</string>
+    <string name="resultado_reprovada">Reprovada</string>
+    <string name="hint_observacao">Observações da banca</string>
+    <string name="botao_confirmar">Confirmar teste</string>
+    <string name="botao_rever_ficha">Rever ficha</string>
+    <string name="botao_encerrar">Encerrar avaliação</string>
+    <string name="erro_resultado">Selecione o resultado do teste</string>
+    <string name="erro_observacao">A observação precisa ter pelo menos 10 caracteres</string>
+    <string name="erro_confirmar_antes">Confirme o teste antes de encerrar</string>
+    <string name="cd_selo">Selo do resultado do teste</string>
+    <string name="formato_selo">Resultado: %1$s</string>
+</resources>

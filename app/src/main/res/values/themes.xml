@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.ParafusoSolto" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/roxo</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorSecondary">@color/laranja</item>
+        <item name="colorError">@color/selo_reprovada</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="android:statusBarColor">@color/roxo</item>
+    </style>
+</resources>
